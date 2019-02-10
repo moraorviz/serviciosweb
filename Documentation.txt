@@ -1,0 +1,34 @@
+Documentation - Web Services & Docker - MIW 2018
+Mario Moraño Orviz
+
+Abstract
+We are going to solve the Exercise3 building the microservices based system to solve the use cases of "ikeaen casa" project.
+Three web services will be build using the standards explained in class and they will be deployed in a docker container and brought to production
+using amazon web services ec2, ubuntu server and docker.
+During the practice we'll use docker compose and for production it is better to use swarm to orchestrate and manage the web services.
+
+Step 1)
+  Launch ubuntu server through aws ec2
+
+Step 2)
+Get docker customer edition for ubuntu
+https://docs.docker.com/install/linux/docker-ce/ubuntu/
+
+Step 3)
+Prepare the build image and commit it to the user registry
+  - maven
+  - oracle jdk
+  - apache tomcat
+
+Step 4)
+Open IDE and link local workspace with the build container
+
+Step 5)
+Develop the actual web services required for the essay
+
+
+
+
+References
+- Links mentioned above
+- 
