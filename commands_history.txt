@@ -1,0 +1,27 @@
+History of commands
+
+Docker CLI
+$ docker run --rm -v $PWD:/app -w /app demo/oracle-java:8 javac Main.java
+$ docker run --rm -v $PWD:/app -w /app demo/oracle-java:8 java Main
+$ docker run -it --rm -v "$PWD":/app -w /app demo/maven:3.3-jdk-8 mvn archetype:generate \
+-DgroupId=com.mycompany.app -DartifactId=my-app \
+-DarchetypeArtifactId=maven-archetype-quickstart -Dinte
+
+$ docker run -it --rm -v "$PWD":/app -w /app moraorviz/oraclejdk-maven:0.0.1 mvn package
+
+$ docker run -it --rm -v "$PWD":/app
+-w /app moraorviz/java-env:0.0.4
+ java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
+
+-v, --volume=[host-src:]container-dest[:<options>]: Bind mount a volume.
+-w="": Working directory inside the container
+
+
+
+
+mavenmvn archetype:generate \
+-DgroupId=com.mycompany.app \
+-DartifactId=my-app \
+-DarchetypeArtifactId=maven-archetype-quickstart \
+-DarchetypeVersion=1.4 \
+-DinteractiveMode=false
