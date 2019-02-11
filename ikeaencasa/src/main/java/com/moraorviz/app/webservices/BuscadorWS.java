@@ -10,6 +10,8 @@ public class BuscadorWS implements IBuscadorWS {
 	
 	public static List<Mueble> mockInventario = new ArrayList<>();
 	
+	// TODO structure better the mock testing data (hard-coded data)
+	// TODO resource for a better placement of this kind of data
 	public BuscadorWS() {
 		mockInventario.add(new Mueble("mueble", "LACK", 59));
 		mockInventario.add(new Mueble("mueble", "BYAS", 69));
@@ -22,7 +24,6 @@ public class BuscadorWS implements IBuscadorWS {
 		mockInventario.add(new Mueble("lampara de pared", "LILLHOLMEN", 16.99));
 	}
 	
-	
 	public double search(String tipo, String nombre) {
 		// TODO Auto-generated method stub
 		for (Mueble m: mockInventario) {
@@ -32,7 +33,4 @@ public class BuscadorWS implements IBuscadorWS {
 		}
 		return 0;
 	}
-	
-	
-
 }
