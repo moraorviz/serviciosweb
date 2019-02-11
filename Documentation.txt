@@ -20,15 +20,22 @@ Prepare the build image and commit it to the user registry
   - oracle jdk
   - apache tomcat
 
+  Step 3.1)
+    - Install & configure java on ubuntu server
+https://runnable.com/docker/java/dockerize-your-java-application
+
 Step 4)
 Open IDE and link local workspace with the build container
 
 Step 5)
 Develop the actual web services required for the essay
 
-
-
+// TODO renumber the steps. The order at this moment is not correct.
+Step 6)
+  - use the build docker container to build
+  - deploy in the tomcat container
+  - this way the workflow is very modularized
 
 References
 - Links mentioned above
-- 
+-

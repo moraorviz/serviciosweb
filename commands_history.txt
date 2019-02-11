@@ -8,6 +8,9 @@ $ docker run -it --rm -v "$PWD":/app -w /app demo/maven:3.3-jdk-8 mvn archetype:
 -DarchetypeArtifactId=maven-archetype-quickstart -Dinte
 
 $ docker run -it --rm -v "$PWD":/app -w /app moraorviz/oraclejdk-maven:0.0.1 mvn package
+$ docker run -it --rm -v "$PWD":/serviciosweb/helloworld -w /serviciosweb/helloworld moraorviz/oraclejdk-maven:0.0.1 mvn package
+$ docker run -it --rm -v "$PWD":/serviciosweb/ikeaencasa -w /serviciosweb/ikeaencasa moraorviz/oraclejdk-maven:0.0.1 mvn package
+
 
 $ docker run -it --rm -v "$PWD":/app
 -w /app moraorviz/java-env:0.0.4
