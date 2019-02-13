@@ -2,4 +2,4 @@
 miw 2018
 
 
-Exercises for web services in java and docker
+Exercises for web services in Java, .NET and Docker
